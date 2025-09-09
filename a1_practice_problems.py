@@ -17,7 +17,7 @@ Make sure to complete the a1.py problems which should be AI generated.
 from typing import List, TypeVar
 
 
-def absolute(n: int) -> int:
+def absolute(n: int) -> int: 
     """Gives the absolute value of the passed in number. Cannot use the built in
     function `abs`.
 
@@ -40,7 +40,11 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    result = 1 
+    for num in range(1, n):
+        result = result * num
+    print(result)
+    return result
 
 
 T = TypeVar("T")
@@ -57,9 +61,12 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    #pyhtonic way
+    #return lst[::2] 
 
+    #java way
 
+    
 def sum_list(lst: List[int]) -> int:
     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
     use the built in function `sum`.
@@ -126,11 +133,9 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
-    assert every_other([1, 2, 3, 4, 5]) == [
-        1,
-        3,
-        5,
-    ], "every_other of [1,2,3,4,5] failed"
+    assert factorial(5) == 120, "Factorial of 5 failed"
+    assert every_other([1, 2, 3, 4, 5]) == [ 1,3,5,], "every_other of [1,2,3,4,5] failed"
+    assert every_other([12,23,25, 48, 53, 63]) == []
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
