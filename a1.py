@@ -35,44 +35,31 @@ PROBLEM 1: [Problem Title/Description]
 [Write a function greet that takes a name as input and prints “Hello, [name]!”
 Example: greet("Alice") should print Hello, Alice!
 
-def greet(name):
-    print(f"Hello, {name}!") 
 
 
 Create a function add that takes two numbers and returns their sum.
 Example: add(3, 5) should return 8.
 
-def add(a, b):
-    return a + b
 
 
 Write a function is_even that returns True if a number is even, otherwise False.
 Example: is_even(4) returns True, is_even(7) returns False.
 
-def is_even(num):
-    return num % 2 == 0
+
 
 
 Define a function square that takes a number and returns its square (number multiplied by itself).
 Example: square(6) returns 36.
 
-def square(num):
-    return num * num
 
 
-Create a function max_of_two that takes two numbers and returns the larger one.
-Example: max_of_two(4, 9) returns 9.
 
-def max_of_two(a, b):
-    return a if a > b else b
 
 
 Write a function print_countdown that takes a number n and prints numbers from n down to 1.
 Example: print_countdown(3) prints:]
 
-def print_countdown(n):
-    for i in range(n, 0, -1):
-        print(i)
+
 
 Example:
 Problem: Write a function called 'is_even' that takes an integer and returns 
@@ -110,18 +97,33 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
 print("Testing Problem 1:")
-# Add your tests here
+
+def greet(name):
+    print(f"Hello, {name}!") 
+
+greet("Aylish")
 
 print("\nTesting Problem 2:")
-# Add your tests here
+def add(a, b):
+    return a + b
+
+print(add(6, 7))
 
 print("\nTesting Problem 3:")
-# Add your tests here
+def is_even(num):
+    return num % 2 == 0
+
+print(is_even(3))
 
 print("\nTesting Problem 4:")
-# Add your tests here
+def square(num):
+    return num * num
+
+print(square(6))
 
 print("\nTesting Problem 5:")
-# Add your tests here
-
-
+def print_countdown(n):
+    for i in range(n, 0, -1):
+        print(i)
+        
+print_countdown(7)
