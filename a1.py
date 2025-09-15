@@ -116,7 +116,7 @@ def is_even(num):
 print(is_even(3))
 
 print("\nTesting Problem 4:")
-def square(num):
+def square(num): 
     return num * num
 
 print(square(6))
