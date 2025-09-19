@@ -20,12 +20,12 @@ Remember: The goal is to **learn programming** while building **AI collaboration
 | Criteria | Points Possible | Points Earned | Comments |
 |----------|----------------|---------------|----------|
 | **Programming Completion** | | | |
-| a1.py Functions Complete | 3 | | |
-| a1_practice_problems.py Complete | 3 | | |
+| a1.py Functions Complete | 3 | 3 | I think you could have chosen some more challenging questions |
+| a1_practice_problems.py Complete | 3 | 2.5 | There was an indentation error at the very beginning |
 | **Reflection & Learning** | | | |
-| AI Collaboration Process | 2 | | |
-| Learning Reflection Quality | 2 | | |
-| **TOTAL** | **10** | | |
+| AI Collaboration Process | 2 | 2 | |
+| Learning Reflection Quality | 2 | 2 | |
+| **TOTAL** | **10** | 9.5 | |
 
 ---
 
